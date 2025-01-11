@@ -1,12 +1,14 @@
 import streamlit as st
-from helper import download_stopwords
+import nltk
+# from helper import download_stopwords
 
 
 st.set_page_config(layout="centered")
 input_text = None
 submit_button = None
 st.session_state["image_switch"] = None
-download_stopwords
+
+nltk.download("stopwords")
 
 st.markdown(
     """

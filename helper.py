@@ -97,17 +97,17 @@ def get_processed(unseen_reviews):
 
 
 # Download Stopwords
-def download_stopwords():
-    try:
-        nltk.data.find("corpora/stopwords")
-        print("Stopwords are already downloaded.")
-    except LookupError:
-        print("Stopwords not found, downloading...")
-        nltk.download("stopwords")
-
-    from nltk.corpus import stopwords
-
-    return stopwords.words("english")
+# def download_stopwords():
+#     try:
+#         nltk.data.find("corpora/stopwords")
+#         print("Stopwords are already downloaded.")
+#     except LookupError:
+#         print("Stopwords not found, downloading...")
+#         nltk.download("stopwords")
+#
+#     from nltk.corpus import stopwords
+#
+#     return stopwords.words("english")
 
 
 # Scapes all user scores and reviews
